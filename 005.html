@@ -2,7 +2,7 @@
 
   <head>
 
-    <!--<script src = "https://code.jquery.com/jquery-3.1.1.js"></script>-->
+    <script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
     <link rel="stylesheet" href="005.css">
     <meta charset="utf-8">
 
@@ -10,16 +10,28 @@
 
   <body>
 
-    <button id = "show">Show</button>
-
-     <dialog>
-
        <div>
-         <p> От кого </p>
-         <input id = "name" autofocus/>
-       </div>
+         <table class = ForValidate>
 
-     </dialog>
+           <tr>
+             <td> От кого </td>
+             <td> <input id = "name" class = "input1" autofocus/> </td>
+             <td id = "Error1" class = "Error">  </td>
+           </tr>
+           <tr>
+             <td> Ваш пароль </td>
+             <td> <input id = "password"> </td>
+             <td id = "Error2" class = "Error"> </td>
+           </tr>
+           <tr>
+             <td> Повторите пароль </td>
+             <td> <input id = "passwordRep"> </td>
+             <td id = "Error3" class = "Error"> </td>
+           </tr>
+
+         </table>
+         <button id = "ok">Проверить</button>
+       </div>
 
      <script src="005.js"></script>
 

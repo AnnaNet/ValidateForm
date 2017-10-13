@@ -1,25 +1,17 @@
-$ (function() {
-  $("#show").html("Show")
-});
-
-/*var dialog = document.querySelector('dialog');
-  document.querySelector('#show').onclick = function() {
-    dialog.showModal();
-  }
-
-document.querySelector('#close').onclick = function() {
-  dialog.close();
-}
 
 document.querySelector('#Ok').onclick = function() {
-  var txt = document.getElementById("name").value;
-  dialog.close();
-  alert(txt);
+  document.getElementById("Error1").innerHTML = "";
+  document.getElementById("Error2").innerHTML = "";
+  if (document.getElementById("name").value == "") {
+    document.getElementById("Error1").innerHTML = "Укажите от кого";
+  }
+  if (document.getElementById("password").value == "") {
+    document.getElementById("Error2").innerHTML = "Укажите пароль";
+  }
+  if (document.getElementById("passwordRep").value !=
+  document.getElementById("password").value) {
+    document.getElementById("Error2").innerHTML = "Пароли не совпадают";
+  }
+
 }
-
-//Validator of form
-
-
-
-
-
+  //Validator of form
