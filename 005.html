@@ -26,10 +26,27 @@
            <tr>
              <td> Повторите пароль </td>
              <td> <input id = "passwordRep"> </td>
+             <td></td>
+           </tr>
+           <tr>
+             <td> Куда </td>
+             <td>
+               <select id = "place">
+                 <option value = 0></option>
+                 <option value = 1>Отдел снабжения</option>
+                 <option value = 2>Отдел разработки</option>
+                 <option value = 3>Директору</option>
+               </select>
+             </td>
              <td id = "Error3" class = "Error"> </td>
            </tr>
 
          </table>
+
+         <p>Сообщение</p>
+         <textarea id = "area" class = "msg" wrap = "soft"></textarea>
+         <p id = "Error4" class = "Error"></p>
+
          <button id = "ok">Проверить</button>
        </div>
 
